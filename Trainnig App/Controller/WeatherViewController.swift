@@ -69,8 +69,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             currentWeather.weatherIconName = currentWeather.weatherCondition(condition: currentWeather.condition)
             
             updateWeatherData(weatherData: currentWeather)
-            print(currentWeather.condition)
-            
         }
     }
     
@@ -89,7 +87,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         
         sunsetLabel.text = "sunset at: " + dateFormatter.string(from: time)
         weatherImg.image = UIImage.init(named: currentWeather.weatherIconName)
-        
     }
 
     //MARK: Location Delegate Methods

@@ -27,6 +27,8 @@
 		CE1AD5502119B3EF0019A788 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5492119B3EF0019A788 /* note7.wav */; };
 		CE1AD5512119B3EF0019A788 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD54A2119B3EF0019A788 /* note4.wav */; };
 		CE1AD5522119B3EF0019A788 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD54B2119B3EF0019A788 /* note1.wav */; };
+		CE1AD5542119C8B80019A788 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD5532119C8B80019A788 /* NotesViewController.swift */; };
+		CE1AD5572119DA2A0019A788 /* NotedDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD5552119DA2A0019A788 /* NotedDataModel.xcdatamodeld */; };
 		CE510D4A2118B3A9003DE754 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE510D492118B3A8003DE754 /* background2.jpg */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		CE1AD5492119B3EF0019A788 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
 		CE1AD54A2119B3EF0019A788 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
 		CE1AD54B2119B3EF0019A788 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		CE1AD5532119C8B80019A788 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		CE1AD5562119DA2A0019A788 /* NotedDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotedDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CE510D492118B3A8003DE754 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
 		ECFA2E000885573E6B7605DE /* Pods_Trainnig_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trainnig_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +122,7 @@
 				CE140B74211476DD001673C4 /* CoreLocationViewController.swift */,
 				CE140B762114771D001673C4 /* WeatherViewController.swift */,
 				CE140B782114772C001673C4 /* PlaySoundsViewController.swift */,
+				CE1AD5532119C8B80019A788 /* NotesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1AD53D2119666F0019A788 /* WeatherDataModel.swift */,
+				CE1AD5552119DA2A0019A788 /* NotedDataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1AD5572119DA2A0019A788 /* NotedDataModel.xcdatamodeld in Sources */,
 				CE140B75211476DD001673C4 /* CoreLocationViewController.swift in Sources */,
 				CE140B772114771D001673C4 /* WeatherViewController.swift in Sources */,
 				CE1AD53E2119666F0019A788 /* WeatherDataModel.swift in Sources */,
 				CE140B6F2114631F001673C4 /* TableViewController.swift in Sources */,
+				CE1AD5542119C8B80019A788 /* NotesViewController.swift in Sources */,
 				CE140B792114772C001673C4 /* PlaySoundsViewController.swift in Sources */,
 				CE140B5921146168001673C4 /* AppDelegate.swift in Sources */,
 			);
@@ -493,6 +501,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE1AD5552119DA2A0019A788 /* NotedDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE1AD5562119DA2A0019A788 /* NotedDataModel.xcdatamodel */,
+			);
+			currentVersion = CE1AD5562119DA2A0019A788 /* NotedDataModel.xcdatamodel */;
+			path = NotedDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE140B4D21146168001673C4 /* Project object */;
 }

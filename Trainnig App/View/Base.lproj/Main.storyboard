@@ -37,30 +37,15 @@
                     <navigationItem key="navigationItem" title="Training App" id="6xb-n2-KKb"/>
                     <connections>
                         <segue destination="cPE-dA-dcn" kind="show" identifier="goToCoreLocation" id="C4E-iJ-JNI"/>
-                        <segue destination="6jm-v1-Ns0" kind="show" identifier="goToNotes" id="UsF-f4-3am"/>
                         <segue destination="ikI-3r-vQX" kind="show" identifier="goToWeatherApi" id="Rec-wh-Tsh"/>
                         <segue destination="AT0-eR-SGZ" kind="show" identifier="goToPlaySounds" id="3gz-sh-Ihb"/>
                         <segue destination="sIq-to-qGs" kind="show" identifier="goToFirebaseCom" id="X9a-ih-zez"/>
+                        <segue destination="we3-wY-DKz" kind="show" identifier="goToNotes" id="FwN-d7-0VU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ag-nu-k0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1156" y="109.29535232383809"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XHX-ex-RiE">
-            <objects>
-                <viewController id="6jm-v1-Ns0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="x8h-yy-Jw1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AgJ-fN-Gua"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbf-cw-2pK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3012" y="-201"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="1V7-M7-Puh">
@@ -161,6 +146,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cn2-Oc-K3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2181.5999999999999" y="-14.842578710644679"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="WiQ-YX-SGH">
+            <objects>
+                <viewController id="we3-wY-DKz" customClass="NotesViewController" customModule="Trainnig_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pG9-fO-BfR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-vu-HwA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="rsu-de-2fA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rsu-de-2fA" id="UCz-Hz-HAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Vc-vu-HwA" firstAttribute="trailing" secondItem="fTK-fl-2ZH" secondAttribute="trailing" id="LXK-e1-EDc"/>
+                            <constraint firstItem="8Vc-vu-HwA" firstAttribute="leading" secondItem="fTK-fl-2ZH" secondAttribute="leading" id="ell-8l-aXy"/>
+                            <constraint firstItem="8Vc-vu-HwA" firstAttribute="bottom" secondItem="fTK-fl-2ZH" secondAttribute="bottom" id="qBM-nq-LAL"/>
+                            <constraint firstItem="8Vc-vu-HwA" firstAttribute="top" secondItem="fTK-fl-2ZH" secondAttribute="top" id="ypd-vK-hAh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fTK-fl-2ZH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" id="fbj-oB-axe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AcK-Ra-vEB">
+                            <connections>
+                                <action selector="Add:" destination="we3-wY-DKz" id="zW6-m2-aw2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notesTabelView" destination="8Vc-vu-HwA" id="92S-XS-4qf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ty7-jB-iUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3008.8000000000002" y="-212.74362818590706"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="71Z-IU-3hf">

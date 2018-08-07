@@ -36,12 +36,7 @@ class PlaySoundsViewController: UIViewController {
         playSound(noteName: "note7.wav")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-    }
-
-    
     func playSound(noteName: String){
         
         let path = Bundle.main.path(forResource: noteName, ofType: nil)!
