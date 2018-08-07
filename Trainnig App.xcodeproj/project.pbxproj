@@ -19,6 +19,14 @@
 		CE140B7B21147951001673C4 /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE140B7A21147951001673C4 /* background1.jpg */; };
 		CE1AD53E2119666F0019A788 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD53D2119666F0019A788 /* WeatherDataModel.swift */; };
 		CE1AD540211970840019A788 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD53F211970830019A788 /* Default-568h@2x.png */; };
+		CE1AD5442119A90E0019A788 /* background3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5432119A90D0019A788 /* background3.jpg */; };
+		CE1AD54C2119B3EF0019A788 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5452119B3EE0019A788 /* note5.wav */; };
+		CE1AD54D2119B3EF0019A788 /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5462119B3EE0019A788 /* note2.wav */; };
+		CE1AD54E2119B3EF0019A788 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5472119B3EE0019A788 /* note6.wav */; };
+		CE1AD54F2119B3EF0019A788 /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5482119B3EF0019A788 /* note3.wav */; };
+		CE1AD5502119B3EF0019A788 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD5492119B3EF0019A788 /* note7.wav */; };
+		CE1AD5512119B3EF0019A788 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD54A2119B3EF0019A788 /* note4.wav */; };
+		CE1AD5522119B3EF0019A788 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE1AD54B2119B3EF0019A788 /* note1.wav */; };
 		CE510D4A2118B3A9003DE754 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE510D492118B3A8003DE754 /* background2.jpg */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +46,14 @@
 		CE140B7A21147951001673C4 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = "<group>"; };
 		CE1AD53D2119666F0019A788 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		CE1AD53F211970830019A788 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE1AD5432119A90D0019A788 /* background3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background3.jpg; sourceTree = "<group>"; };
+		CE1AD5452119B3EE0019A788 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		CE1AD5462119B3EE0019A788 /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		CE1AD5472119B3EE0019A788 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		CE1AD5482119B3EF0019A788 /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		CE1AD5492119B3EF0019A788 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		CE1AD54A2119B3EF0019A788 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		CE1AD54B2119B3EF0019A788 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
 		CE510D492118B3A8003DE754 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
 		ECFA2E000885573E6B7605DE /* Pods_Trainnig_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trainnig_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,9 +134,17 @@
 		CE140B6C211461A6001673C4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE1AD54B2119B3EF0019A788 /* note1.wav */,
+				CE1AD5462119B3EE0019A788 /* note2.wav */,
+				CE1AD5482119B3EF0019A788 /* note3.wav */,
+				CE1AD54A2119B3EF0019A788 /* note4.wav */,
+				CE1AD5452119B3EE0019A788 /* note5.wav */,
+				CE1AD5472119B3EE0019A788 /* note6.wav */,
+				CE1AD5492119B3EF0019A788 /* note7.wav */,
 				CE140B5F2114616A001673C4 /* Assets.xcassets */,
 				CE140B7A21147951001673C4 /* background1.jpg */,
 				CE510D492118B3A8003DE754 /* background2.jpg */,
+				CE1AD5432119A90D0019A788 /* background3.jpg */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -201,12 +225,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1AD54D2119B3EF0019A788 /* note2.wav in Resources */,
+				CE1AD54C2119B3EF0019A788 /* note5.wav in Resources */,
 				CE140B7B21147951001673C4 /* background1.jpg in Resources */,
+				CE1AD54E2119B3EF0019A788 /* note6.wav in Resources */,
+				CE1AD5522119B3EF0019A788 /* note1.wav in Resources */,
+				CE1AD54F2119B3EF0019A788 /* note3.wav in Resources */,
 				CE140B632114616A001673C4 /* LaunchScreen.storyboard in Resources */,
+				CE1AD5502119B3EF0019A788 /* note7.wav in Resources */,
 				CE510D4A2118B3A9003DE754 /* background2.jpg in Resources */,
 				CE140B602114616A001673C4 /* Assets.xcassets in Resources */,
 				CE140B5E21146168001673C4 /* Main.storyboard in Resources */,
 				CE1AD540211970840019A788 /* Default-568h@2x.png in Resources */,
+				CE1AD5442119A90E0019A788 /* background3.jpg in Resources */,
+				CE1AD5512119B3EF0019A788 /* note4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

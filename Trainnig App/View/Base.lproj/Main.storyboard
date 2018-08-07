@@ -169,13 +169,116 @@
                     <view key="view" contentMode="scaleToFill" id="txZ-we-o3u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-dD-DNe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="el9-11-828">
+                                <rect key="frame" x="10" y="94" width="355" height="543"/>
+                                <subviews>
+                                    <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsE-YP-Zd9">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="52"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 1">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound1:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="dCX-9Q-lvc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mff-0T-EoF" userLabel="Sound 2">
+                                        <rect key="frame" x="0.0" y="82" width="355" height="51.5"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 2">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound2:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="QC4-QF-nYc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS5-IS-dTR">
+                                        <rect key="frame" x="0.0" y="163.5" width="355" height="52"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 3">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound3:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="o6f-eO-efj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-0e-Jlv">
+                                        <rect key="frame" x="0.0" y="245.5" width="355" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 4">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound4:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="JM3-zX-KFW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-Yc-aeo">
+                                        <rect key="frame" x="0.0" y="327.5" width="355" height="52"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 5">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound5:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="lGc-NS-nMw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uC-vh-EKh">
+                                        <rect key="frame" x="0.0" y="409.5" width="355" height="51.5"/>
+                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 6">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound6:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="ra5-Jd-djV"/>
+                                        </connections>
+                                    </button>
+                                    <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-W3-Owi">
+                                        <rect key="frame" x="0.0" y="491" width="355" height="52"/>
+                                        <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sound 7">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sound7:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="Gg0-mv-e1m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Cj8-0e-Jlv" secondAttribute="trailing" id="514-5j-iG5"/>
+                                    <constraint firstAttribute="trailing" secondItem="KsE-YP-Zd9" secondAttribute="trailing" id="HqS-a6-9AW"/>
+                                    <constraint firstAttribute="trailing" secondItem="9uC-vh-EKh" secondAttribute="trailing" id="J3v-hv-eld"/>
+                                    <constraint firstItem="Cj8-0e-Jlv" firstAttribute="height" secondItem="KsE-YP-Zd9" secondAttribute="height" id="LrI-X1-Zcb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZyW-W3-Owi" secondAttribute="trailing" id="TyS-lx-huE"/>
+                                    <constraint firstAttribute="trailing" secondItem="aS5-IS-dTR" secondAttribute="trailing" id="UAL-Ov-sC9"/>
+                                    <constraint firstAttribute="trailing" secondItem="mff-0T-EoF" secondAttribute="trailing" id="hgg-AC-YQw"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ym-Yc-aeo" secondAttribute="trailing" id="ojL-Kf-oHA"/>
+                                    <constraint firstItem="ZyW-W3-Owi" firstAttribute="height" secondItem="KsE-YP-Zd9" secondAttribute="height" id="r5e-2d-yMQ"/>
+                                    <constraint firstItem="aS5-IS-dTR" firstAttribute="height" secondItem="KsE-YP-Zd9" secondAttribute="height" id="td3-LY-bZd"/>
+                                    <constraint firstItem="3ym-Yc-aeo" firstAttribute="height" secondItem="KsE-YP-Zd9" secondAttribute="height" id="vhT-HP-AYa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GTr-dD-DNe" firstAttribute="bottom" secondItem="dA7-gG-yg6" secondAttribute="bottom" id="0vs-ab-b1s"/>
+                            <constraint firstItem="GTr-dD-DNe" firstAttribute="leading" secondItem="dA7-gG-yg6" secondAttribute="leading" id="H2b-0m-tPh"/>
+                            <constraint firstItem="el9-11-828" firstAttribute="leading" secondItem="dA7-gG-yg6" secondAttribute="leading" constant="10" id="Y7K-sS-sTh"/>
+                            <constraint firstItem="GTr-dD-DNe" firstAttribute="trailing" secondItem="dA7-gG-yg6" secondAttribute="trailing" id="aJv-rF-dJr"/>
+                            <constraint firstItem="GTr-dD-DNe" firstAttribute="top" secondItem="txZ-we-o3u" secondAttribute="top" id="cq4-5B-blz"/>
+                            <constraint firstItem="dA7-gG-yg6" firstAttribute="bottom" secondItem="el9-11-828" secondAttribute="bottom" constant="30" id="gwx-OB-Saz"/>
+                            <constraint firstItem="dA7-gG-yg6" firstAttribute="trailing" secondItem="el9-11-828" secondAttribute="trailing" constant="10" id="nJV-zV-fQQ"/>
+                            <constraint firstItem="el9-11-828" firstAttribute="top" secondItem="dA7-gG-yg6" secondAttribute="top" constant="30" id="xaC-Lu-LVW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dA7-gG-yg6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsU-8t-HkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2182" y="702"/>
+            <point key="canvasLocation" x="2181.5999999999999" y="701.19940029985014"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PM8-ey-mPe">
@@ -286,5 +389,6 @@
     <resources>
         <image name="background1.jpg" width="750" height="1334"/>
         <image name="background2.jpg" width="640" height="960"/>
+        <image name="background3.jpg" width="1080" height="1920"/>
     </resources>
 </document>
