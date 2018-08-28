@@ -15,19 +15,15 @@ class CoreLocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
-    
     let locationManager = CLLocationManager()
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +37,6 @@ class CoreLocationViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.stopUpdatingLocation()
             longitudeLabel.text = "longitude: \(locations.coordinate.longitude)"
             latitudeLabel.text = "latitude: \(locations.coordinate.latitude)"
-            
         }
     }
 

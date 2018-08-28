@@ -8,5 +8,6 @@ target 'Trainnig App' do
   # Pods for Trainnig App
 	pod 'SwiftyJSON'
 	pod 'Alamofire'
+    pod 'SwiftLint'
 
 end

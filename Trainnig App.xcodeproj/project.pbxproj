@@ -178,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE140B672114616A001673C4 /* Build configuration list for PBXNativeTarget "Trainnig App" */;
 			buildPhases = (
+				CEF3164B213598F100FCCE93 /* SwiftLint */,
 				2EE320769477E4C26FC0C336 /* [CP] Check Pods Manifest.lock */,
 				CE140B5121146168001673C4 /* Sources */,
 				CE140B5221146168001673C4 /* Frameworks */,
@@ -288,6 +289,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trainnig App/Pods-Trainnig App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CEF3164B213598F100FCCE93 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

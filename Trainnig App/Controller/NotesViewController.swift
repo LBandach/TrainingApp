@@ -12,7 +12,7 @@ import CoreData
 class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var notesArray: [Note] = []
-    let defaults = UserDefaults()
+    //let defaults = UserDefaults()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var notesTabelView: UITableView!
@@ -49,7 +49,7 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func saveData() {
         
         do {
-        try context.save()
+            try context.save()
         } catch {
             print("Error saving data\(error)")
         }
@@ -59,7 +59,7 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func loadData() {
         let request: NSFetchRequest<Note> = Note.fetchRequest()
         do {
-        notesArray =  try context.fetch(request)
+            notesArray =  try context.fetch(request)
         } catch {
             print("Error fetching data \(error)")
         }
