@@ -10,10 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    let viewNamesArray: [String] = ["CoreLocation","WeatherApi","PlaySounds","Notes","FirebaseComunicator", "next comming soon"]
-    
-    
-    
+    let viewNamesArray: [String] = ["CoreLocation", "WeatherApi", "PlaySounds", "Notes", "FirebaseComunicator", "next comming soon"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 }
@@ -21,7 +19,7 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
+
         return 1
     }
 
@@ -30,19 +28,18 @@ class TableViewController: UITableViewController {
         return viewNamesArray.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         cell.textLabel?.text = viewNamesArray[indexPath.row]
-        
+
         return cell
     }
- 
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-            
+
         case 0:
             performSegue(withIdentifier: "goToCoreLocation", sender: self)
         case 1:
@@ -53,12 +50,12 @@ class TableViewController: UITableViewController {
             performSegue(withIdentifier: "goToNotes", sender: self)
         case 4:
             performSegue(withIdentifier: "goToFirebaseCom", sender: self)
-            
+
         default:
             print("blablabla")
         }
     }
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

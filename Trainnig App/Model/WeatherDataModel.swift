@@ -9,7 +9,7 @@
 import Foundation
 
 class WeatherDataModel {
-    
+
     var temperature: Int = 0
     var condition: Int = 0
     var humidity: Int = 0
@@ -17,11 +17,10 @@ class WeatherDataModel {
     var sunSet: Double = 0
     var cityName: String = ""
     var weatherIconName: String = ""
-    
-    
+
     func weatherCondition(condition: Int) -> String {
-        
-        switch (condition) {
+
+        switch condition {
         case 200...232 :
             return "11d"
         case 300...321 :

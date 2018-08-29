@@ -16,8 +16,7 @@ class CoreLocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     let locationManager = CLLocationManager()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
@@ -30,7 +29,7 @@ class CoreLocationViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locations = locations[locations.count - 1]
         if locations.horizontalAccuracy > 0 {

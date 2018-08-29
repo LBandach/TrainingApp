@@ -182,7 +182,7 @@
                     <navigationItem key="navigationItem" title="Notes" id="fbj-oB-axe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AcK-Ra-vEB">
                             <connections>
-                                <action selector="Add:" destination="we3-wY-DKz" id="zW6-m2-aw2"/>
+                                <action selector="add:" destination="we3-wY-DKz" id="rUk-Qd-N1R"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -215,7 +215,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound1:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="dCX-9Q-lvc"/>
+                                            <action selector="sound1:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="GwB-Oj-sz1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mff-0T-EoF" userLabel="Sound 2">
@@ -225,7 +225,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound2:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="QC4-QF-nYc"/>
+                                            <action selector="sound2:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="y5D-D9-KqI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS5-IS-dTR">
@@ -235,7 +235,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound3:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="o6f-eO-efj"/>
+                                            <action selector="sound3:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="v7h-sl-11Z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-0e-Jlv">
@@ -245,7 +245,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound4:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="JM3-zX-KFW"/>
+                                            <action selector="sound4:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="xpf-eK-a73"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-Yc-aeo">
@@ -255,7 +255,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound5:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="lGc-NS-nMw"/>
+                                            <action selector="sound5:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="x0W-79-pDT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uC-vh-EKh">
@@ -265,7 +265,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound6:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="ra5-Jd-djV"/>
+                                            <action selector="sound6:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="nZa-uB-0mz"/>
                                         </connections>
                                     </button>
                                     <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-W3-Owi">
@@ -275,7 +275,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="Sound7:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="Gg0-mv-e1m"/>
+                                            <action selector="sound7:" destination="AT0-eR-SGZ" eventType="touchUpInside" id="Kdn-9E-bwh"/>
                                         </connections>
                                     </button>
                                 </subviews>
